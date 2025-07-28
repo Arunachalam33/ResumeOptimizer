@@ -70,7 +70,7 @@ app.post("/ai-extract", async (req, res) => {
 
     try {
        
-        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" }); "
+        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" }); 
 
        
         const prompt = `You are an expert at parsing resumes. Extract key information from the provided resume text and return it as a JSON object. Ensure the JSON is always valid and strictly follows the schema below. If a field is not found, use "Not found" for strings or an empty array for lists.
